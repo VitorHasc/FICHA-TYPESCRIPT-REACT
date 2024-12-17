@@ -1,6 +1,8 @@
 # Sistema de Fichas - React + TypeScript + Vite
 
-Este projeto é uma aplicação desenvolvida com **React**, **TypeScript** e **Vite**.  
+!ESTE PROJETO UTILIZA NOSSA API: https://github.com/VitorHasc/JAVA-API-SPRING
+
+Este projeto é uma aplicação desenvolvida com **React**, **TypeScript** e **Vite**.
 
 ## Funcionalidades
 - Simulação de um sistema de fichas com funcionalidades modernas.  
