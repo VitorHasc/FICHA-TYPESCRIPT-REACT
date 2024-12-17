@@ -1,53 +1,28 @@
-npm run dev para executar o projeto
-é necessário colocar a api no .env na variavel: VITE_API_URL=
+# Sistema de Fichas - React + TypeScript + Vite
 
-# React + TypeScript + Vite
+Este projeto é uma aplicação desenvolvida com **React**, **TypeScript** e **Vite**.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funcionalidades
+- Simulação de um sistema de fichas com funcionalidades modernas.  
+- Desenvolvido para ser rápido e eficiente, utilizando **Vite** para construção e **TypeScript** para tipagem.  
 
-Currently, two official plugins are available:
+## Configuração Inicial
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Configure a API**:  
+   Adicione a URL da sua API no arquivo `.env` na variável:  
+   ```bash
+   VITE_API_URL=<sua_api_url>
 
-## Expanding the ESLint configuration
+2. **Instale as dependências**:
+   ```bash
+   npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
 
-- Configure the top-level `parserOptions` property like this:
+Acesse a aplicação no navegador em: http://localhost:5173
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**Deploy**
+O projeto está disponível online na plataforma Vercel:
+https://ficha-typescript-react-6aep40kgm-vitorhascs-projects.vercel.app/
